@@ -4,8 +4,8 @@
    Case Problem 1
 
    ACGIP Registration Validation Style Sheet
-   Author: 
-   Date:   
+   Author: Angelina Stilphen
+   Date:   1.14.19
 
    Filename: cg_validate.css
 
@@ -13,4 +13,6 @@
 
 
 /* Validation Styles */
-
+input, select, textarea {
+    background-color: rgb(245, 245, 140); 
+}
