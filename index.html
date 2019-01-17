@@ -54,12 +54,14 @@
       <h1>Conference Registration Form</h1>
       <p>Required Item (*)</p>
       
+      <!-- I had to put a common way to accepct user input, that allows user to enter data hat can be saved nd processed, and within that web form an action of the url and set the method as "POST" -->
       <form action="http://www.example.com/cg/register" method="POST">
       
+        <!-- Next I needed to put in a label for the list so the person who is using it you have options.-->
         <label for="name">Title</label />
         <input type="text" name="Title" id="titleBox" list="titleList"/> 
         <datalist id="titleList">
-            <option value="Mr."></option>
+            <option value="Mr."></option> 
             <option value="Mrs."></option>
             <option value="Ms."></option>
             <option value="Prof."></option>
@@ -68,6 +70,7 @@
             <option value="Assoc. Prof."></option> 
         </datalist> 
         
+        <!-- I added labels and inputs for each of the survey to be filled out. Some need to be required to fill out like the first name, last name, address, email, and phone number. Then I applied inside the input element a pattern that lets the user know that the phone number and ACGIP boxes that they need to get filled out in a certain way for them to accept. -->
         <label for="name">First Name*</label>
         <input type="text" name="firstName" id="fnBox" required />
 
@@ -89,6 +92,7 @@
         <label for="name">ACGIP Membership Number</label>
         <input type="text" name="acgipID" id="idBox" placeholder="acgip-nnnnnn" pattern="^acgip\-\d{6}$"/> 
 
+        <!-- This list if option is set as a label as "Registration category", the lists let the user pick which registration path to go. -->
         <label for="regList">Registration category</label> 
         <select name="registerType" id="regList">
             <option value="member">ACGIP Member ($695)</option>
@@ -98,6 +102,7 @@
             <option value="guest">“Guest ($35)</option>
         </select>
 
+        <!-- The input in this pargraph element lets the user continue on to what the user.  -->
         <p>
             <input type="submit" value="continue">
         </p>

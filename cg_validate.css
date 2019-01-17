@@ -13,6 +13,24 @@
 
 
 /* Validation Styles */
-input, select, textarea {
+input:focus select:focus textarea:focus {
     background-color: rgb(245, 245, 140); 
+}
+
+#fnBox:focus:valid 
+#InBox:focus:valid 
+#addBox:focus:valid 
+#mailBox:focus:valid 
+#phoneBox:focus:valid 
+#idBox:focus:valid {
+    background-color: rgb(220, 255, 220) url(cg_valid.png) bottom right no-repeat;
+}
+
+#fnBox:focus:invalid 
+#InBox:focus:invalid 
+#addBox:focus:invalid 
+#mailBox:focus:invalid 
+#phoneBox:focus:invalid 
+#idBox:focus:invalid {
+    background-color: rgb(225, 232, 232) url(cg_invalid.png) right/contain no-repeat;
 }
